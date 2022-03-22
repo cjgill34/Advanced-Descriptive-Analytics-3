@@ -1,7 +1,7 @@
 library(ggplot2)
 
 #Question 3.1 part a
-Appliance <- read.csv("/Users/cjgil/OneDrive/SCMA 854/ApplianceShipments.csv")
+Appliance <- read.csv("/Users/Cassie Gill/OneDrive/SCMA 854/CGill HW3/SCMA 854 HW3/ApplianceShipments.csv")
 appliance.ts <- ts(Appliance$Shipments, start = c(1985,1), end=c(1989,4), frequency = 4)
 plot(appliance.ts, col="blue", lty=1, lwd=2, xlab = "Year", ylab = "Appliance Shipments in millions of $",
      ylim = c(3900, 5000), main = "Appliance Shipments")
